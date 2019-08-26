@@ -29,3 +29,37 @@ def concatenate_and_sort(arr1, arr2):
     concat = (arr1 + arr2)
     concat.sort()
     return concat
+
+def extract_even_elements(input_list):
+    """
+    Returns new list (old list intact) with only the even elements extracted from the original
+    :param list: Original list
+    :return: New list with extracted odd elements from the list passed as input parameter
+    """
+    return list()
+
+def delete_even_elements(input_list):
+    """
+    Returns the same list with only the odd elements.
+    :param list: Original list
+    :return: Modified original list with even elements omitted
+    """
+    return list()
+
+def extract_every_third_element_using_slices(input_list):
+    """
+    Write the implementation of function that extracts every third element using slices technique
+    :param input_list: input list for slicing
+    :return: list with every third element or empty list if not applicable
+    """
+    return list()
+
+def delete_element_from_list_if_present(input_list, element):
+    """
+    Write implementation of method that tests if element is present and deletes it if true modifying the original list
+    (no copy is made in the process)
+    :param input_list: input list that might or might not contain the element for deletion
+    :param element: element for deletion
+    :return: the original list with deleted element if present
+    """
+    return list()
