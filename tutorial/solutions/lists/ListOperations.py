@@ -7,7 +7,8 @@ def concatenate_lists(arr1, arr2):
     :param arr2: second list that comes after the end of the first
     :return: list of first + second
     """
-    return list()
+
+    return arr1 + arr2
 
 def concatenate_list_with_reverse_second_list(arr1, arr2):
     """

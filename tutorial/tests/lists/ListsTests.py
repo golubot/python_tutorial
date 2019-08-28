@@ -11,38 +11,56 @@ class ListConcatenationTestCase(unittest.TestCase):
         Write implementation in tutorial.solutions.lists which will be tested by the test below
         """
 
-        first_list = [1, 2, 3, 4]
+        first_list = [1, 2, 3, 4, 5]
         second_list = [11, 22, 33]
 
         result = concatenate_lists(first_list, second_list)
 
         self.assertIsNotNone(result)
-        self.assertEquals(7, len(result))
-        self.assertEquals([1, 2, 3, 4, 11, 22, 33], result)
+        self.assertEquals(8, len(result))
+        self.assertEquals([1, 2, 3, 4, 5, 11, 22, 33], result)
 
     def test_list_concatenation_with_empty_second_list(self):
         """
         Test should be simple enough if you follow the above for guidance.
         """
+        l1 = ["d", "r", "y", "t"]
+        l2 = list()
 
-        # write test
-        self.assertEqual(True, False)
+        result = concatenate_lists(l1, l2)
+
+        self.assertIsNotNone(result)
+        self.assertEquals(["d", "r", "y", "t"], result)
+        # self.assertEqual(True, False)
 
     def test_list_concatenation_with_empty_first_list(self):
         """
         Test should be simple enough if you follow the above for guidance.
         """
+        l1 = list()
+        l2 = list()
 
-        # write test
-        self.assertEqual(True, False)
+        l2.append(7.4)
+        l2.extend([4, 5.8])
+
+        res = concatenate_lists(l1, l2)
+
+        self.assertEquals([7.4, 4, 5.8], res)
 
     def test_list_concatenation_with_two_empty_lists(self):
         """
         Test should be simple enough if you follow the above for guidance.
         """
+        # given
+        l1 = list()
+        l2 = list()
 
-        # write test
-        self.assertEqual(True, False)
+        # when
+        result = concatenate_lists(l1, l2)
+
+        # then
+        self.assertIsNotNone(result)
+        self.assertEquals([], result)
 
     def test_list_concatenation_with_second_reversed(self):
         """
