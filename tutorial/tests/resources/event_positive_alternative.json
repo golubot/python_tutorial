@@ -1,12 +1,13 @@
 {
   "dataset_id": "custom_dataset_id",
-  "event_id": "0ff28e2d-698f-4e82-919a-ca617be82a03",
+  "event_id": "372d37a4-ca3a-11e9-ac8e-e8afe580d403",
   "environment_id": "local",
   "payload": {
     "payload_version": "3.0",
     "header": {
-      "event_type": "learning",
-      "event_timestamp": "2019-07-25T10:18:31.814608Z",
+      "event_type": "learning 2",
+      "publish_event": true,
+      "event_timestamp": "2019-09-11T04:28:55.814608Z",
       "event_origin": "test-event-origin",
       "source_id": "test-source-id",
       "source_version": "$LATEST",
@@ -22,7 +23,7 @@
         "system_id": "My system id"
       },
       "facts": {
-        "claim_reference": "4002807892",
+        "claim_reference": "55602835266",
         "original_id": 0,
         "new_id": 37
       }
