@@ -17,8 +17,8 @@ class ListConcatenationTestCase(unittest.TestCase):
         result = concatenate_lists(first_list, second_list)
 
         self.assertIsNotNone(result)
-        self.assertEquals(8, len(result))
-        self.assertEquals([1, 2, 3, 4, 5, 11, 22, 33], result)
+        self.assertEqual(8, len(result))
+        self.assertEqual([1, 2, 3, 4, 5, 11, 22, 33], result)
 
     def test_list_concatenation_with_empty_second_list(self):
         """
@@ -30,7 +30,7 @@ class ListConcatenationTestCase(unittest.TestCase):
         result = concatenate_lists(l1, l2)
 
         self.assertIsNotNone(result)
-        self.assertEquals(["d", "r", "y", "t"], result)
+        self.assertEqual(["d", "r", "y", "t"], result)
 
     def test_list_concatenation_with_empty_first_list(self):
         """
@@ -44,7 +44,7 @@ class ListConcatenationTestCase(unittest.TestCase):
 
         res = concatenate_lists(l1, l2)
 
-        self.assertEquals([7.4, 4, 5.8], res)
+        self.assertEqual([7.4, 4, 5.8], res)
 
     def test_list_concatenation_with_two_empty_lists(self):
         """
@@ -59,7 +59,7 @@ class ListConcatenationTestCase(unittest.TestCase):
 
         # then
         self.assertIsNotNone(result)
-        self.assertEquals([], result)
+        self.assertEqual([], result)
 
     def test_list_concatenation_with_second_reversed(self):
         """
@@ -72,8 +72,8 @@ class ListConcatenationTestCase(unittest.TestCase):
         result = concatenate_list_with_reverse_second_list(first_list, second_list)
 
         self.assertIsNotNone(result)
-        self.assertEquals(7, len(result))
-        self.assertEquals([1, 2, 3, 4, 33, 22, 11], result)
+        self.assertEqual(7, len(result))
+        self.assertEqual([1, 2, 3, 4, 33, 22, 11], result)
 
     def test_reversed_input_lists_concatenated(self):
         """
@@ -85,7 +85,7 @@ class ListConcatenationTestCase(unittest.TestCase):
 
         result = concatenate_reversed_input_lists(first_list, second_list)
 
-        self.assertEquals([4, 3, 2, 1, 33, 22, 11], result)
+        self.assertEqual([4, 3, 2, 1, 33, 22, 11], result)
 
     def test_sorted_list(self):
         """
@@ -97,19 +97,19 @@ class ListConcatenationTestCase(unittest.TestCase):
         result = concatenate_and_sort(first_list, second_list)
 
         self.assertIsNotNone(result)
-        self.assertEquals([1, 2, 3, 4, 11, 22, 33], result)
+        self.assertEqual([1, 2, 3, 4, 11, 22, 33], result)
 
         first_list = [ "a", "b", "c"]
         second_list = ["x", "i", "p"]
         result = concatenate_and_sort(first_list, second_list)
 
-        self.assertEquals(["a", "b", "c", "i", "p", "x"], result)
+        self.assertEqual(["a", "b", "c", "i", "p", "x"], result)
 
         first_list = [ "banana", "curiosity", "ana"]
         second_list = ["killed", "the", "cat"]
         result = concatenate_and_sort(first_list, second_list)
 
-        self.assertEquals(["ana", "banana", "cat", "curiosity", "killed", "the"], result)
+        self.assertEqual(["ana", "banana", "cat", "curiosity", "killed", "the"], result)
 
     def test_switch_elements_by_index(self):
         """
@@ -121,8 +121,8 @@ class ListConcatenationTestCase(unittest.TestCase):
 
         result1, result2 = switch_elements_by_index(first_list, second_list, 2)
 
-        self.assertEquals([1, 3, 6], result1)
-        self.assertEquals([2, 4, 5, 8], result2)
+        self.assertEqual([1, 3, 6], result1)
+        self.assertEqual([2, 4, 5, 8], result2)
 
     def test_extract_even_elements(self):
         seq = range(0, 100)
