@@ -102,9 +102,7 @@ def extract_every_third_element_using_slices(input_list):
     :param input_list: input list for slicing
     :return: list with every third element or empty list if not applicable
     """
-    out_list = input_list[3::3]
-
-    return out_list
+    return input_list[3::3]
 
 
 def delete_element_from_list_if_present(input_list, element):

@@ -150,7 +150,7 @@ class ListConcatenationTestCase(unittest.TestCase):
         print(result)
         self.assertEqual(result, list(range(3, 100, 3)))
 
-        result = extract_every_third_element_using_slices(list(range(0, 1)))
+        result = extract_every_third_element_using_slices([0, 1])
         print(result)
         self.assertEqual(result, list())
 
