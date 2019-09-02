@@ -14,6 +14,8 @@ class MyTestCase(unittest.TestCase):
 
         # BONUS: Overload the constructor to accept another argument which will be account's allowed minus. Implement
         # the minus feature and `guard` the original constructor from passing negative values (validation of parameters)
+
+        # BONUS 2: Add the delete feature (overwrite dunder __del__() method) to delete Persons's account
         # GOOD JOB!
 
     """
