@@ -12,7 +12,7 @@ class MyTestCase(unittest.TestCase):
         type(my_schnauzer)
         my_dalmatian = Dog(breed="Dalmatian", name="Chejs", spots=True)
         type(my_dalmatian)
-        self.assertNotEquals(my_schnauzer, my_dalmatian)
+        self.assertNotEqual(my_schnauzer, my_dalmatian)
 
         self.assertTrue("Fido", my_schnauzer.name) # get name attribute
         self.assertTrue("Fido", my_schnauzer.get_name()) # get name function
