@@ -1,6 +1,8 @@
 import unittest
 from tutorial.solutions.lists.ListOperations import concatenate_lists, concatenate_list_with_reverse_second_list, \
-    concatenate_and_sort, concatenate_list_from_reverse_input_lists, switch_list_elements_by_index
+    concatenate_and_sort, concatenate_list_from_reverse_input_lists, switch_list_elements_by_index, \
+    extract_even_elements, delete_even_elements, extract_every_third_element_using_slices,\
+    delete_element_from_list_if_present
 
 
 class ListConcatenationTestCase(unittest.TestCase):
@@ -165,6 +167,47 @@ class ListConcatenationTestCase(unittest.TestCase):
         """
 
         self.assertRaises(ValueError, switch_list_elements_by_index, 0, [2], 1)
+
+    def test_extract_even_elements(self):
+        seq = range(0, 100)
+        input_list = list(seq)
+
+        result = extract_even_elements(input_list)
+        self.assertTrue(100, len(input_list))
+        self.assertTrue(50, len(result))
+
+        expected = range(0, 100, 2)
+        self.assertEqual(result, list(expected))
+
+    def test_delete_even_elements(self):
+        seq = range(0, 100)
+        input_list = list(seq)
+
+        result = delete_even_elements(input_list)
+        self.assertEqual(50, len(result))
+        self.assertEqual(50, len(input_list))
+        self.assertEqual(input_list, result)
+
+    def test_extract_every_third_element(self):
+        result = extract_every_third_element_using_slices(list(range(0, 100)))
+        self.assertEqual(result, list(range(3, 100, 3)))
+
+        result = extract_every_third_element_using_slices(list(range(0, 1)))
+        self.assertEqual(result, list())
+
+        result = extract_every_third_element_using_slices(list(range(0, 2)))
+        self.assertEqual(result, list())
+
+        result = extract_every_third_element_using_slices(list(range(0, 3)))
+        self.assertEqual(result, list())
+
+    def test_delete_element_from_list_if_present(self):
+        input_list = ["john", "Doe", "foo"]
+        self.assertEqual(["john", "Doe", "foo"], delete_element_from_list_if_present(input_list, "bar"))
+        self.assertEqual(["john", "Doe", "foo"], delete_element_from_list_if_present(input_list, "Foo"))
+        self.assertEqual(["john", "Doe", "foo"], delete_element_from_list_if_present(input_list, "FOO"))
+        self.assertEqual(["john", "Doe"], delete_element_from_list_if_present(input_list, "foo"))
+        self.assertEqual(2, len(input_list))
 
 
 if __name__ == '__main__':
