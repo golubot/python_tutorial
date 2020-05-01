@@ -86,18 +86,31 @@ def switch_list_elements_by_index(arr1, arr2, pos):
 def extract_even_elements(input_list):
     """
     Returns new list (old list intact) with only the even elements extracted from the original
-    :param list: Original list
+    :param input_list: Original list
     :return: New list with extracted odd elements from the list passed as input parameter
     """
-    return list()
+
+    even_list = list()
+    for n in input_list:
+        if n % 2 == 0:
+            even_list.append(n)
+
+    return even_list
+
 
 def delete_even_elements(input_list):
     """
     Returns the same list with only the odd elements.
-    :param list: Original list
+    :param input_list: Original list
     :return: Modified original list with even elements omitted
     """
-    return list()
+
+    for n in input_list:
+        if n % 2 == 0:
+            input_list.remove(n)
+
+    return input_list
+
 
 def extract_every_third_element_using_slices(input_list):
     """
@@ -105,7 +118,9 @@ def extract_every_third_element_using_slices(input_list):
     :param input_list: input list for slicing
     :return: list with every third element or empty list if not applicable
     """
-    return list()
+
+    return input_list[3::3]
+
 
 def delete_element_from_list_if_present(input_list, element):
     """
@@ -115,4 +130,8 @@ def delete_element_from_list_if_present(input_list, element):
     :param element: element for deletion
     :return: the original list with deleted element if present
     """
-    return list()
+
+    if element in input_list:
+        input_list.remove(element)
+
+    return input_list
