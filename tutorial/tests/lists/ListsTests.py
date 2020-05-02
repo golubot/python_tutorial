@@ -31,7 +31,7 @@ class ListConcatenationTestCase(unittest.TestCase):
 
         return_list = concatenate_lists(name_list, empty_list)
 
-        self.assertEqual(return_list, ["Ana", "Vanja","Dora", "Kalina"])
+        self.assertEqual(return_list, ["Ana", "Vanja", "Dora", "Kalina"])
         self.assertEqual(len(return_list), len(name_list))
 
     def test_list_concatenation_with_empty_first_list(self):
