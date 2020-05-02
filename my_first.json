@@ -1,0 +1,15 @@
+{
+  "name": "Dijana",
+  "hasChildren": true,
+  "noChildren": 2,
+  "children": [
+    {
+      "childName": "Damjan",
+      "age": 4
+    },
+    {
+      "childName": "Ognen",
+      "age": 2.5
+    }
+  ]
+}
