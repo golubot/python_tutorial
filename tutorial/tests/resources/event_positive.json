@@ -1,0 +1,41 @@
+{
+  "dataset_id": "custom_dataset_id",
+  "event_id": "0ff28e2d-698f-4e82-919a-ca617be82a03",
+  "environment_id": "local",
+  "payload": {
+    "payload_version": "3.0",
+    "header": {
+      "event_type": "learning",
+      "publish_event": true,
+      "event_timestamp": "2019-07-25T10:18:31.814608Z",
+      "event_origin": "test-event-origin",
+      "source_id": "test-source-id",
+      "source_version": "$LATEST",
+      "domain": "loopback"
+    },
+    "data": {
+      "producer": {
+        "actor_type": "local",
+        "system_id": "test-system"
+      },
+      "consumer": {
+        "actor_type": "system",
+        "system_id": "My system id"
+      },
+      "facts": {
+        "claim_reference": "4002807892",
+        "original_id": 0,
+        "new_id": 37
+      }
+    },
+    "status": {
+      "status_code": "100",
+      "status_message": "Success"
+    }
+  },
+  "retention": {
+    "delete": true,
+    "deletion_date": "2068-04-23T18:25:43.511Z",
+    "obfuscate": false
+  }
+}
