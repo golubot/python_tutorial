@@ -6,7 +6,7 @@
     "payload_version": "3.0",
     "header": {
       "event_type": "learning",
-      "publish_event": true,
+      "publish_event": false,
       "event_timestamp": "2019-07-25T10:18:31.814608Z",
       "event_origin": "test-event-origin",
       "source_id": "test-source-id",

@@ -2,14 +2,11 @@
   "name": "Dijana",
   "hasChildren": true,
   "noChildren": 2,
-  "children": [
-    {
+  "children": {
       "childName": "Damjan",
-      "age": 4
-    },
-    {
-      "childName": "Ognen",
-      "age": 2.5
+      "age": 4,
+      "toys": {
+        "name": "Hulk"
+      }
     }
-  ]
 }
